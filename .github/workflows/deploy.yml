@@ -27,6 +27,10 @@ jobs:
           NUXT_JWT_SECRET: ${{ secrets.JWT_SECERT }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           NITRO_PRESET: github_pages
+          
+      - run: pnpm run migrate:deploy
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
