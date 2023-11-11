@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1698060279700,
+      "tag": "0000_overjoyed_reavers",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1698271896162,
+      "tag": "0001_nosy_steve_rogers",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1698344018896,
+      "tag": "0002_overjoyed_hulk",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1698576865415,
+      "tag": "0003_plain_madripoor",
+      "breakpoints": true
+    }
+  ]
+}

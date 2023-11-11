@@ -1,0 +1,63 @@
+<script lang="ts" setup>
+import type { UseFetchOptions } from '#app'
+
+const authStore = useAuthStore()
+const userStore = useUserStore()
+
+const { data } = await useFetch('/api/user/me', {
+  headers: {
+    Authorization: 'Bearer ' + authStore.token,
+  },
+  method: 'GET',
+} as UseFetchOptions<any>)
+userStore.setUser(data.value.user || null)
+const { user } = storeToRefs(userStore)
+
+const items = [
+  [
+    {
+      label: 'Mon compte',
+      icon: 'i-mdi-account-circle',
+      to: '/admin/account',
+    },
+    {
+      label: 'Se déconnecter',
+      icon: 'i-mdi-logout',
+      click: () => authStore.logout(),
+    },
+  ],
+]
+</script>
+
+<template>
+  <div class="flex flex-row justify-between py-4">
+    <div class="flex flex-row items-center space-x-6">
+      <NuxtLink to="/admin">
+        <svg fill="none" height="30" viewBox="0 0 58 42" width="58" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M37.3174 41.8655H22.2817L0 0H10.4671C14.2244 0 17.6559 2.13098 19.3226 5.498L37.3174 41.8655Z"
+            fill="#06F47C"
+          />
+          <path
+            d="M39.8225 36.7768L58 0H47.3311C43.6795 0 40.3257 2.01434 38.6099 5.23758L31.1519 19.247L39.8225 36.7768Z"
+            fill="#06F47C"
+          />
+        </svg>
+      </NuxtLink>
+      <div class="border border-black py-4"></div>
+      <NuxtLink class="hover:underline" to="/admin/users">Utilisateurs</NuxtLink>
+      <NuxtLink class="hover:underline" to="/admin/posts">Postes</NuxtLink>
+      <NuxtLink class="hover:underline" to="/admin/categories">Catégories</NuxtLink>
+    </div>
+    <div class="flex flex-row items-center space-x-2">
+      <UDropdown :items="items">
+        <div class="flex flex-row items-center">
+          <span>{{ user?.email }}</span>
+          <UIcon name="i-mdi-chevron-down" />
+        </div>
+      </UDropdown>
+    </div>
+  </div>
+</template>
+
+<style scoped></style>
