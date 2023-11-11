@@ -1,0 +1,16 @@
+_id: env_a7f8fdc18a3141598e0d05fa1395152c
+type: Environment
+parentId: wrk_88ef4aade5b340948cf38ac106d8f3e8
+modified: 1698501026832
+created: 1698062711546
+name: Base Environment
+data:
+  baseUrl: https://jobs.vexastudio.com
+  bearerToken: JWT_TOKEN
+dataPropertyOrder:
+  "&":
+    - baseUrl
+    - bearerToken
+color: null
+isPrivate: false
+metaSortKey: 1698062711546

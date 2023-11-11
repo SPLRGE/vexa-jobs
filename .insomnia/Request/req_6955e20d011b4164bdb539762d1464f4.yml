@@ -1,0 +1,30 @@
+_id: req_6955e20d011b4164bdb539762d1464f4
+type: Request
+parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
+modified: 1698499133011
+created: 1698447565539
+url: "{{ _.baseUrl }}/api/category/all"
+name: Get all categories
+description: |-
+  Obtenir toutes les catégories.
+  ```response:200
+  [
+  	{
+  		"id": 3,
+  		"name": "Discord"
+  	}
+  ]
+  ```
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1698447565539
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

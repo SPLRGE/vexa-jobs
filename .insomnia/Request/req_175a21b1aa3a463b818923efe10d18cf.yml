@@ -1,0 +1,43 @@
+_id: req_175a21b1aa3a463b818923efe10d18cf
+type: Request
+parentId: wrk_88ef4aade5b340948cf38ac106d8f3e8
+modified: 1698444971735
+created: 1698062714173
+url: "{{ _.baseUrl }}/api/initialize"
+name: Create initial user
+description: |-
+  Ajouter le premier utilisateur
+
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de créer l'utilisateur",
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "cetus@splrge.dev",
+    	"password": "12345678"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d84388ea4375472d9368b2c10a30e2b2
+authentication: {}
+metaSortKey: -1698062714173
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

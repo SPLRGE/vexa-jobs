@@ -1,0 +1,42 @@
+_id: req_4fb491b8091341cba4cff95430221d15
+type: Request
+parentId: fld_ee33e24208254a6ea36bec3257add368
+modified: 1698499515236
+created: 1698268800060
+url: "{{ _.baseUrl }}/api/auth/login"
+name: Login
+description: |-
+  Permet d'obtenir un jeton de connexion.
+  ```response:200
+  {
+  	"token": "JWT_TOKEN"
+  }
+  ```
+  ```response:401
+  {
+  	"statusCode": 401,
+  	"message": "Identifiants incorrects",
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "cetus@splrge.dev",
+    	"password": "12345678"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1e336d4e333b4a37961bc4f94674e447
+authentication: {}
+metaSortKey: -1698354483814
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

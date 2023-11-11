@@ -1,0 +1,46 @@
+_id: req_f74e5d1296d7475abc1544f3a77e78ea
+type: Request
+parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
+modified: 1698499545616
+created: 1698353089958
+url: "{{ _.baseUrl }}/api/user"
+name: Get user by id
+description: |-
+  Trouver un utilisateur par son ID.
+  Les ADMIN ont accès à tous les utilisateurs.
+  L'utilisateur peut se trouver lui-même.
+  ```response:200
+  {
+  	"user": {
+  		"id": 1,
+  		"email": "artix@vexastudio.com",
+  		"role": "ADMIN"
+  	}
+  }
+  ```
+  ```response:404
+  {
+  	"statusCode": 404,
+  	"message": "Utilisateur introuvable",
+  }
+  ```
+method: GET
+body: {}
+parameters:
+  - id: pair_6211a3b9020f4618901be9ed247723de
+    name: id
+    value: "3"
+    description: Identifiant de l'utilisateur auquel on veut accéder
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+  disabled: false
+metaSortKey: -1698354451391
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

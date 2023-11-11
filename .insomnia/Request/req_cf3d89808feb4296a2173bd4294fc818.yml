@@ -1,0 +1,60 @@
+_id: req_cf3d89808feb4296a2173bd4294fc818
+type: Request
+parentId: fld_744ee9df7ca54707b9f145c13e5eaa51
+modified: 1699469532959
+created: 1698492634053
+url: "{{ _.baseUrl }}/api/post"
+name: Update post
+description: |-
+  Modifier un poste.
+  Seuls les ADMIN peuvent effectuer cette opération.
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:404
+  {
+  	"statusCode": 404,
+  	"message": "La catégorie ou l'utilisateur n'existe(nt) pas"
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de mettre à jour le poste",
+  }
+  ```
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "a6ede7f4-fd8f-4ea0-bd11-5024b3c902af",
+    	"title": "Chef modérateur",
+    	"link": "http://forms.gle/2345",
+    	"isActive": true,
+    	"categoryId": 3
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_68d7a85765ff47b38c7740273f98f719
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698492634053
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

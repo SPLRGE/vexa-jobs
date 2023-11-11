@@ -1,0 +1,14 @@
+_id: env_28bf072465c74cc4b231eb95566e39f1
+type: Environment
+parentId: env_a7f8fdc18a3141598e0d05fa1395152c
+modified: 1698361038344
+created: 1698358753645
+name: Production
+data:
+  baseUrl: https://candidatures.vexastudio.com
+dataPropertyOrder:
+  "&":
+    - baseUrl
+color: "#0a65c7"
+isPrivate: false
+metaSortKey: 1698358753645

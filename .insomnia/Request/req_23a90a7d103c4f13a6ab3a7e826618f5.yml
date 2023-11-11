@@ -1,0 +1,53 @@
+_id: req_23a90a7d103c4f13a6ab3a7e826618f5
+type: Request
+parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
+modified: 1698499138317
+created: 1698447040901
+url: "{{ _.baseUrl }}/api/category"
+name: Update category
+description: |-
+  Modifier une catégorie avec son id.
+  ```response:200
+  {
+  	"category": {
+  		"id": 1,
+  		"name": "Aide"
+  	}
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de mettre à jour la catégorie"
+  }
+  ```
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 3,
+    	"name": "Discord - Aide"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a8880431da72463889e1d7b46fcf63b0
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698447040901
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

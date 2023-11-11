@@ -1,0 +1,32 @@
+_id: req_f941b0a5a2314477ac7cb66d0d766acc
+type: Request
+parentId: wrk_88ef4aade5b340948cf38ac106d8f3e8
+modified: 1698499565093
+created: 1698362797463
+url: "{{ _.baseUrl }}/api/redirect"
+name: Redirect
+description: |-
+  Redirige vers le lien du poste et sert de compteur de cliques
+  ```response:404
+  {
+  	"statusCode": 404,
+  	"message": "Poste introuvable"
+  }
+  ```
+method: GET
+body: {}
+parameters:
+  - id: pair_cba7ddd5c49941fbba9cb002477db535
+    name: postId
+    value: 07b3180c-a427-4a74-8964-4b2759db1dad
+    description: L'identifiant du poste auquel vous voulez accéder
+headers: []
+authentication: {}
+metaSortKey: -1698362797463
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

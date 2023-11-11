@@ -1,0 +1,52 @@
+_id: req_92d349d5a3094bb6954819248cdf5fc9
+type: Request
+parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
+modified: 1698499174927
+created: 1698152322059
+url: "{{ _.baseUrl }}/api/user"
+name: Add user
+description: |-
+  Permets d'ajouter un utilsateur.
+  Seul les ADMIN peuvent faire cette opération.
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:409
+  {
+  	"statusCode": 409,
+  	"message": "Ce courriel est déjà utilisé par quelqu'un d'autre",
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "cetus@devioo.com",
+    	"password": "12345678",
+    	"role": "USER"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5e459215358e4d7aa8aea25cba2611cd
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698354451191
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

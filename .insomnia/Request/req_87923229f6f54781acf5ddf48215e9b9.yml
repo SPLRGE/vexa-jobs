@@ -1,0 +1,51 @@
+_id: req_87923229f6f54781acf5ddf48215e9b9
+type: Request
+parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
+modified: 1698499523875
+created: 1698361195610
+url: "{{ _.baseUrl }}/api/user"
+name: Delete user by id
+description: |-
+  Supprimer un utilisateur.
+  Les ADMIN peuvent supprimer n'importe quel utilisateur.
+  Un utilisateur peut se supprimer lui-même.
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de supprimer l'utilisateur"
+  }
+  ```
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c5c3591090044b14b3379073bb3675a7
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698361195610
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,50 @@
+_id: req_898fecc3ca3b4d23bd6e55ba244a1f26
+type: Request
+parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
+modified: 1698499135499
+created: 1698447405470
+url: "{{ _.baseUrl }}/api/category"
+name: Delete category
+description: |-
+  Supprimer une catégorie.
+  Uniquement les ADMIN peuvent le faire.
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de supprimer la catégorie"
+  }
+  ```
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": 2
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_b0a459d70ee44480b85cbee38b5a5ce8
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698447405470
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

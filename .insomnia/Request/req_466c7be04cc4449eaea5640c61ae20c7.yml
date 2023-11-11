@@ -1,0 +1,44 @@
+_id: req_466c7be04cc4449eaea5640c61ae20c7
+type: Request
+parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
+modified: 1698499319337
+created: 1698445264766
+url: "{{ _.baseUrl }}/api/category"
+name: Create category
+description: |-
+  Créer une catégorie.
+  Tout utilisateur loggé peut le faire.
+  ```response:200
+  {
+  	"success": true
+  }
+  ```
+  ```response:500
+  {
+  	"statusCode": 500,
+  	"message": "Impossible de créer la catégorie"
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Discord"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1e533a519aad454f8527c1bc6af18bc9
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698445264766
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,57 @@
+_id: req_83b4bc8a7eb941f78c7fbc23c3a9f8a7
+type: Request
+parentId: fld_744ee9df7ca54707b9f145c13e5eaa51
+modified: 1698499332741
+created: 1698448108548
+url: "{{ _.baseUrl }}/api/post"
+name: Get post by id
+description: |-
+  Obtenir un poste via son uuid
+  ```response:200
+  {
+  	"post": {
+  		"id": "5c8448ba-a9b9-4f72-a77e-8e9652529be4",
+  		"title": "Chef modérateur",
+  		"link": "http://forms.gle/2345",
+  		"category": {
+  			"name": "Discord"
+  		}
+  	}
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:404
+  {
+  	"statusCode": 404,
+  	"message": "Poste introuvable"
+  }
+  ```
+method: GET
+body: {}
+parameters:
+  - id: pair_802a381611a142aea8aeedeb111321ba
+    name: id
+    value: 5c8448ba-a9b9-4f72-a77e-8e9652529be4
+    description: Id du poste à trouver
+  - id: pair_229de73e58754ce8bf704bc1aebedc97
+    name: adminMode
+    value: "true"
+    description: Activer le mode administrateur
+    disabled: false
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698448108548
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

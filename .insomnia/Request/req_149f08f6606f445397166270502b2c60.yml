@@ -1,0 +1,52 @@
+_id: req_149f08f6606f445397166270502b2c60
+type: Request
+parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
+modified: 1699730103302
+created: 1698445532589
+url: "{{ _.baseUrl }}/api/category/posts"
+name: Get posts by category id
+description: |-
+  Récupérer tous les postes d'une catégorie
+  ```response:200
+  {
+  	"postsByCategory": [
+  		{
+  			"id": "39640194-7000-48a4-b5e7-9639daa28c53",
+  			"title": "Modérateur",
+  			"link": "http://forms.gle/2345",
+  		}
+  	]
+  }
+  ```
+  ```response:403
+  {
+  	"statusCode": 403,
+  	"message": "Non autorisé"
+  }
+  ```
+  ```response:404
+  {
+  	"statusCode": 404,
+  	"message": "Catégorie introuvable",
+  }
+  ```
+method: GET
+body: {}
+parameters:
+  - id: pair_f27e1f8d28cb49d4b6d8ae8059210f34
+    name: adminMode
+    value: "true"
+    description: Permet de récupérer les posts non actifs
+    disabled: false
+headers: []
+authentication:
+  type: bearer
+  token: "{{ _.bearerToken }}"
+metaSortKey: -1698445532589
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
