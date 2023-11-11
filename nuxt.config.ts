@@ -36,7 +36,6 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    url: '',
     jwtSecret: '',
     saltRounds: 10,
   },
