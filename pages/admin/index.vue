@@ -7,13 +7,20 @@ useSeoMeta({
   title: 'Vexa Jobs - Admin',
 })
 
-const authStore = useAuthStore()
-const userStore = useUserStore()
+const welcomeMessage = computed(() => {
+  const hour = new Date().getHours()
+  if (hour >= 5 && hour < 12) return 'Bonjour'
+  if (hour >= 12 && hour < 18) return 'Bon après-midi'
+  return 'Bonsoir'
+})
+const { user } = storeToRefs(useUserStore())
 </script>
 
 <template>
-  <div>
-    {{ authStore.token }}
-    {{ userStore.user }}
+  <div class="mt-4">
+    <div class="flex flex-wrap flex-row justify-between">
+      <p class="text-2xl font-bold">{{ welcomeMessage }}, {{ user?.email }} !</p>
+      <VexaButton class="my-4" url="https://discord.splrge.dev" text="Besoin d'aide ?" />
+    </div>
   </div>
 </template>
