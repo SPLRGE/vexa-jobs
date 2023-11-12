@@ -45,7 +45,7 @@ const items = [
         </svg>
       </NuxtLink>
       <div class="border border-black py-4"></div>
-      <NuxtLink class="border-b-2 border-transparent hover:border-primary-green-500 w-max" to="/admin/users" active-class="!border-primary-green-500">Utilisateurs</NuxtLink>
+      <NuxtLink class="border-b-2 border-transparent hover:border-primary-green-500" to="/admin/users" active-class="!border-primary-green-500">Utilisateurs</NuxtLink>
       <NuxtLink class="border-b-2 border-transparent hover:border-primary-green-500" to="/admin/posts" active-class="!border-primary-green-500">Postes</NuxtLink>
       <NuxtLink class="border-b-2 border-transparent hover:border-primary-green-500" to="/admin/categories" active-class="!border-primary-green-500">Catégories</NuxtLink>
     </div>
