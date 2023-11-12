@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { and, eq } from 'drizzle-orm'
 import { categories, posts, users } from '~/db/schema'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   const parsedQuery = useQuery(
     event,
     z.object({

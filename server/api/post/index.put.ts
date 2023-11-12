@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { eq } from 'drizzle-orm'
 import { insertPostSchema, posts, stringToNumber } from '~/db/schema'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   if (!isUserAdmin(event)) {
     throw createError({
       statusCode: 403,

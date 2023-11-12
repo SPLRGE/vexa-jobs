@@ -2,7 +2,7 @@ import { hash } from 'bcrypt'
 import { insertUserSchema, users } from '~/db/schema'
 import useBody from '~/server/utils/useBody'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   const parsedBody = await useBody(
     event,
     insertUserSchema.omit({

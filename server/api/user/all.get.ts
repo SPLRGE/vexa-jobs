@@ -1,6 +1,6 @@
 import { users } from '~/db/schema'
 
-export default defineEventHandler(event => {
+export default defineRequestHandler(event => {
   if (!isUserAdmin(event)) {
     throw createError({
       statusCode: 403,
