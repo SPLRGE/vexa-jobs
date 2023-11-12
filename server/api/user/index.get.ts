@@ -2,7 +2,7 @@ import { eq } from 'drizzle-orm'
 import useQuery from '~/server/utils/useQuery'
 import { insertUserSchema, users } from '~/db/schema'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   const parsedQuery = useQuery(
     event,
     insertUserSchema.pick({

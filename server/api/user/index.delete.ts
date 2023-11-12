@@ -3,7 +3,7 @@ import { insertUserSchema, users } from '~/db/schema'
 import isUserAdmin from '~/server/utils/isUserAdmin'
 import isUserItself from '~/server/utils/isUserItself'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   const parsedBody = await useBody(
     event,
     insertUserSchema.pick({
