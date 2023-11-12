@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
-      - users: actions/checkout@v3
-      - users: pnpm/aciton-setup@v2
+      - uses: actions/checkout@v3
+      - uses: pnpm/aciton-setup@v2
         with:
           version: latest
 
