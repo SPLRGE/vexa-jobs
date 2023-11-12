@@ -73,7 +73,7 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
     <p>Saisissez votre chance pour travailler au sein d’une équipe dynamique et évolutive!</p>
 
     <UProgress v-if="pending" animation="carousel" class="my-6" />
-    <p v-else-if="!data || !Array.isArray(data)" class="my-4 italic">Aucun poste n’est actuellement disponible.</p>
+    <p v-else-if="!data || !Array.isArray(data) || data?.length == 0" class="my-4 italic text-gray-500">Aucun poste n’est actuellement disponible.</p>
     <PostsCategory
       v-for="category in data"
       v-else-if="data"
