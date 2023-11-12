@@ -3,7 +3,7 @@ import isUserLogged from '~/server/utils/isUserLogged'
 import useBody from '~/server/utils/useBody'
 import { insertPostSchema, posts, stringToNumber } from '~/db/schema'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   isUserLogged(event)
 
   const parsedBody = await useBody(

@@ -2,7 +2,7 @@ import { hash } from 'bcrypt'
 import { insertUserSchema, users } from '~/db/schema'
 import isUserAdmin from '~/server/utils/isUserAdmin'
 
-export default defineEventHandler(async event => {
+export default defineRequestHandler(async event => {
   if (!isUserAdmin(event)) {
     throw createError({
       statusCode: 403,
