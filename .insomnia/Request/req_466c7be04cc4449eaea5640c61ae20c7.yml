@@ -3,7 +3,7 @@ type: Request
 parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
 modified: 1698499319337
 created: 1698445264766
-url: "{{ _.baseUrl }}/api/category"
+url: '{{ _.baseUrl }}/api/category'
 name: Create category
 description: |-
   Créer une catégorie.
@@ -33,7 +33,7 @@ headers:
     id: pair_1e533a519aad454f8527c1bc6af18bc9
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698445264766
 isPrivate: false
 settingStoreCookies: true

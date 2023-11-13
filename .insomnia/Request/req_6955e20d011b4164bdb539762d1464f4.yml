@@ -3,7 +3,7 @@ type: Request
 parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
 modified: 1698499133011
 created: 1698447565539
-url: "{{ _.baseUrl }}/api/category/all"
+url: '{{ _.baseUrl }}/api/category/all'
 name: Get all categories
 description: |-
   Obtenir toutes les catégories.

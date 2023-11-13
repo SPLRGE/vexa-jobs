@@ -3,7 +3,7 @@ type: Request
 parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
 modified: 1698499174927
 created: 1698152322059
-url: "{{ _.baseUrl }}/api/user"
+url: '{{ _.baseUrl }}/api/user'
 name: Add user
 description: |-
   Permets d'ajouter un utilsateur.
@@ -41,7 +41,7 @@ headers:
     id: pair_5e459215358e4d7aa8aea25cba2611cd
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698354451191
 isPrivate: false
 settingStoreCookies: true

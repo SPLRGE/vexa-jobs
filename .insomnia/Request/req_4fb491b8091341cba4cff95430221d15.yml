@@ -3,7 +3,7 @@ type: Request
 parentId: fld_ee33e24208254a6ea36bec3257add368
 modified: 1698499515236
 created: 1698268800060
-url: "{{ _.baseUrl }}/api/auth/login"
+url: '{{ _.baseUrl }}/api/auth/login'
 name: Login
 description: |-
   Permet d'obtenir un jeton de connexion.

@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_88ef4aade5b340948cf38ac106d8f3e8
 modified: 1698444971735
 created: 1698062714173
-url: "{{ _.baseUrl }}/api/initialize"
+url: '{{ _.baseUrl }}/api/initialize'
 name: Create initial user
 description: |-
   Ajouter le premier utilisateur

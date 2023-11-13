@@ -3,7 +3,7 @@ type: Request
 parentId: fld_744ee9df7ca54707b9f145c13e5eaa51
 modified: 1698499347296
 created: 1698363988374
-url: "{{ _.baseUrl }}/api/post/all"
+url: '{{ _.baseUrl }}/api/post/all'
 name: Get all posts
 description: |-
   Voir tous les postes.
@@ -33,7 +33,7 @@ body: {}
 parameters:
   - id: pair_905677fd728c4b10bc3843040d092a9a
     name: adminMode
-    value: "true"
+    value: 'true'
     description: Pour voir tous les postes, même ceux qui ne sont pas actifs
     disabled: false
 headers:
@@ -41,7 +41,7 @@ headers:
     value: insomnia/2023.5.8
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698363988374
 isPrivate: false
 settingStoreCookies: true

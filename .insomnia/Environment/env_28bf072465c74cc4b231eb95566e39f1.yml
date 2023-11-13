@@ -7,8 +7,8 @@ name: Production
 data:
   baseUrl: https://candidatures.vexastudio.com
 dataPropertyOrder:
-  "&":
+  '&':
     - baseUrl
-color: "#0a65c7"
+color: '#0a65c7'
 isPrivate: false
 metaSortKey: 1698358753645

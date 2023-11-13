@@ -3,7 +3,7 @@ type: Request
 parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
 modified: 1698499523875
 created: 1698361195610
-url: "{{ _.baseUrl }}/api/user"
+url: '{{ _.baseUrl }}/api/user'
 name: Delete user by id
 description: |-
   Supprimer un utilisateur.
@@ -40,7 +40,7 @@ headers:
     id: pair_c5c3591090044b14b3379073bb3675a7
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698361195610
 isPrivate: false
 settingStoreCookies: true

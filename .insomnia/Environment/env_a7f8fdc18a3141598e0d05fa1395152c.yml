@@ -8,7 +8,7 @@ data:
   baseUrl: https://jobs.vexastudio.com
   bearerToken: JWT_TOKEN
 dataPropertyOrder:
-  "&":
+  '&':
     - baseUrl
     - bearerToken
 color: null
