@@ -3,7 +3,7 @@ type: Request
 parentId: fld_744ee9df7ca54707b9f145c13e5eaa51
 modified: 1699469521878
 created: 1698498908003
-url: "{{ _.baseUrl }}/api/post"
+url: '{{ _.baseUrl }}/api/post'
 name: Delete post
 description: |-
   Supprimer un poste. 
@@ -38,7 +38,7 @@ headers:
     value: application/json
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698498908003
 isPrivate: false
 settingStoreCookies: true

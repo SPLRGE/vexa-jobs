@@ -3,7 +3,7 @@ type: Request
 parentId: fld_3dc96708fc424b428aa3c0e1cbbf41c9
 modified: 1698499545616
 created: 1698353089958
-url: "{{ _.baseUrl }}/api/user"
+url: '{{ _.baseUrl }}/api/user'
 name: Get user by id
 description: |-
   Trouver un utilisateur par son ID.
@@ -29,12 +29,12 @@ body: {}
 parameters:
   - id: pair_6211a3b9020f4618901be9ed247723de
     name: id
-    value: "3"
+    value: '3'
     description: Identifiant de l'utilisateur auquel on veut accéder
 headers: []
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
   disabled: false
 metaSortKey: -1698354451391
 isPrivate: false

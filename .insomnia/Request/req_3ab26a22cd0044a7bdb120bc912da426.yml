@@ -3,7 +3,7 @@ type: Request
 parentId: fld_744ee9df7ca54707b9f145c13e5eaa51
 modified: 1698499500191
 created: 1698354512713
-url: "{{ _.baseUrl }}/api/post"
+url: '{{ _.baseUrl }}/api/post'
 name: Create a post
 description: |-
   Créer un nouveau poste.
@@ -37,16 +37,16 @@ body:
     }
 parameters:
   - id: pair_282e38a5c58749fb9f8554f12b5da1d1
-    name: ""
-    value: ""
-    description: ""
+    name: ''
+    value: ''
+    description: ''
 headers:
   - name: Content-Type
     value: application/json
     id: pair_c58be26bdbf54036a7890ccc9ee21a69
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698354512713
 isPrivate: false
 settingStoreCookies: true

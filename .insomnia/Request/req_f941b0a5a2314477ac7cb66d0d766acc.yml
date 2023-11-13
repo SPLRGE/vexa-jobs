@@ -3,7 +3,7 @@ type: Request
 parentId: wrk_88ef4aade5b340948cf38ac106d8f3e8
 modified: 1698499565093
 created: 1698362797463
-url: "{{ _.baseUrl }}/api/redirect"
+url: '{{ _.baseUrl }}/api/redirect'
 name: Redirect
 description: |-
   Redirige vers le lien du poste et sert de compteur de cliques

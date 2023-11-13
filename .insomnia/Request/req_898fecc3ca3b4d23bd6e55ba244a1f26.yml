@@ -3,7 +3,7 @@ type: Request
 parentId: fld_0ae7145fcd1a46b081b4d5e536ac50b5
 modified: 1698499135499
 created: 1698447405470
-url: "{{ _.baseUrl }}/api/category"
+url: '{{ _.baseUrl }}/api/category'
 name: Delete category
 description: |-
   Supprimer une catégorie.
@@ -39,7 +39,7 @@ headers:
     id: pair_b0a459d70ee44480b85cbee38b5a5ce8
 authentication:
   type: bearer
-  token: "{{ _.bearerToken }}"
+  token: '{{ _.bearerToken }}'
 metaSortKey: -1698447405470
 isPrivate: false
 settingStoreCookies: true
