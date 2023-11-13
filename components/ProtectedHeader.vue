@@ -33,7 +33,7 @@ const items = [
 
 <template>
   <div>
-    <div class="hidden flex flex-row justify-between py-4">
+    <div class="md:flex hidden flex-row justify-between py-4">
       <div class="flex flex-row items-center space-x-6">
         <NuxtLink to="/admin">
           <svg fill="none" height="30" viewBox="0 0 58 42" width="58" xmlns="http://www.w3.org/2000/svg">
@@ -52,19 +52,19 @@ const items = [
           class="border-b-2 border-transparent hover:border-primary-green-500"
           to="/admin/users"
           active-class="!border-primary-green-500"
-        >Utilisateurs</NuxtLink
+          >Utilisateurs</NuxtLink
         >
         <NuxtLink
           class="border-b-2 border-transparent hover:border-primary-green-500"
           to="/admin/posts"
           active-class="!border-primary-green-500"
-        >Postes</NuxtLink
+          >Postes</NuxtLink
         >
         <NuxtLink
           class="border-b-2 border-transparent hover:border-primary-green-500"
           to="/admin/categories"
           active-class="!border-primary-green-500"
-        >Catégories</NuxtLink
+          >Catégories</NuxtLink
         >
       </div>
       <div class="flex flex-row items-center space-x-2">
@@ -79,7 +79,7 @@ const items = [
 
     <!-- burger menu mobiles -->
     <div>
-      <div class="flex flex-row justify-between p-4 items-center">
+      <div class="flex flex-row items-center md:hidden justify-between p-4">
         <NuxtLink to="/admin">
           <svg fill="none" height="25" viewBox="0 0 58 42" width="58" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -96,23 +96,18 @@ const items = [
       </div>
 
       <div v-if="isOpen" class="flex flex-col">
-        <NuxtLink
-          class="bg-transparent p-2 rounded hover:bg-gray-100"
-          to="/admin/users"
-          active-class="!bg-gray-100"
-        >Utilisateurs</NuxtLink
+        <NuxtLink class="rounded bg-transparent p-2 hover:bg-gray-100" to="/admin/users" active-class="!bg-gray-100"
+          >Utilisateurs</NuxtLink
+        >
+        <NuxtLink class="rounded bg-transparent p-2 hover:bg-gray-100" to="/admin/posts" active-class="!bg-gray-100"
+          >Postes</NuxtLink
         >
         <NuxtLink
-          class="bg-transparent p-2 rounded hover:bg-gray-100"
-          to="/admin/posts"
-          active-class="!bg-gray-100"
-        >Postes</NuxtLink
-        >
-        <NuxtLink
-          class="bg-transparent p-2 rounded hover:bg-gray-100"
+          class="rounded bg-transparent p-2 hover:bg-gray-100"
           to="/admin/categories"
           active-class="!bg-gray-100"
-        >Catégories</NuxtLink>
+          >Catégories</NuxtLink
+        >
       </div>
     </div>
   </div>
