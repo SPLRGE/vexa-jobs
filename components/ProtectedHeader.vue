@@ -33,7 +33,7 @@ const items = [
 
 <template>
   <div>
-    <div class="md:flex hidden flex-row justify-between py-4">
+    <div class="hidden flex-row justify-between py-4 md:flex">
       <div class="flex flex-row items-center space-x-6">
         <NuxtLink to="/admin">
           <svg fill="none" height="30" viewBox="0 0 58 42" width="58" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@ const items = [
 
     <!-- burger menu mobiles -->
     <div>
-      <div class="flex flex-row items-center md:hidden justify-between p-4">
+      <div class="flex flex-row items-center justify-between p-4 md:hidden">
         <NuxtLink to="/admin">
           <svg fill="none" height="25" viewBox="0 0 58 42" width="58" xmlns="http://www.w3.org/2000/svg">
             <path
