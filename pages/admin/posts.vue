@@ -61,24 +61,28 @@ const {
   },
   query: requestQuery,
 })
-watch(posts, () => {
-  posts.value = posts.value?.map(post => {
-    return {
-      ...post,
-      isActive: post.isActive !== undefined ? post.isActive : true,
-      clicks: post.clicks !== undefined ? post.clicks : Number.NaN,
-      createdBy: {
-        email: post.createdBy?.email ? post.createdBy.email : 'Inconnu',
-      },
-    }
-  })
+const transformedPosts = computed(() => {
+  let returned = []
+  if (Array.isArray(posts.value)) {
+    returned = posts.value?.map(post => {
+      return {
+        ...post,
+        isActive: post.isActive !== undefined ? post.isActive : true,
+        clicks: post.clicks !== undefined ? post.clicks : Number.NaN,
+        createdBy: {
+          email: post.createdBy?.email ? post.createdBy.email : 'Inconnu',
+        },
+      }
+    })
+    return returned
+  }
 })
 const filteredRows = computed(() => {
   if (!q.value || posts.value == null) {
-    return posts.value
+    return transformedPosts.value
   }
 
-  return posts.value.filter((post: any) => {
+  return transformedPosts.value.filter((post: any) => {
     return Object.values(post).some(value => {
       return String(value).toLowerCase().includes(q.value.toLowerCase())
     })
