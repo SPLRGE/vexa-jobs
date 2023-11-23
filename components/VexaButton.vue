@@ -16,7 +16,7 @@ defineProps({
   <div>
     <NuxtLink
       :to="url"
-      class="hover:bg-green-primary-400 rounded bg-primary-green-500 px-4 py-1 font-bold text-black"
+      class="hover:bg-primary-green-600 rounded bg-primary-green-500 px-4 py-2 font-semibold text-black transition"
       target="_blank"
     >
       {{ text }}
