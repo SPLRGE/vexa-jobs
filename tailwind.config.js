@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // 'space-cadet': "#152757", // background color
+        'chaos-black': "#101010", // background color
         'primary-green': {
           50: '#e6fff2',
           100: '#ccffe5',
