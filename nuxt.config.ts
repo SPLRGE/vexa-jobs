@@ -15,9 +15,9 @@ export default defineNuxtConfig({
     icons: ['mdi'],
   },
 
-  colorMode: {
-    preference: 'light',
-  },
+  // colorMode: {
+  //   preference: 'dark',
+  // },
 
   pinia: {
     storesDirs: ['./stores/**'],
