@@ -47,6 +47,7 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
     <div class="mb-4 mt-8 text-4xl font-bold">
       Nous cherchons <br />
       <TextGradient text="des gens talentueux" />
+      <span>.</span>
     </div>
     <p>
       Chez Vexa Studio, nous cherchons des gens talentueux, créatifs & motivés à joindre notre équipe. Vous répondez à
@@ -56,11 +57,12 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
     <!-- Pourquoi travailler chez nous -->
     <div class="mb-4 mt-8 text-3xl font-bold">
       <span>Pourquoi travailler</span> <br />
-      <TextGradient text="chez nous?" />
+      <TextGradient text="chez nous" />
+      <span>?</span>
     </div>
     <p>En plus d’avoir la chance de travailler dans un studio réputé, travailler chez nous comporte des avantages:</p>
     <ul class="list-inside list-disc leading-loose marker:text-primary-green-500">
-      <li>Choisissez les commandes que vous désirez faire</li>
+      <li>Choisissez les commandes que vous désirez faire.</li>
       <li>Horaire extrêmement flexible.</li>
       <li>Salaire évolutif et avantageux.</li>
     </ul>
@@ -69,6 +71,7 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
     <div class="mb-4 mt-8 text-3xl font-bold">
       <span>Postes actuellement</span> <br />
       <TextGradient text="disponibles" />
+      <span>:</span>
     </div>
     <p>Saisissez votre chance pour travailler au sein d’une équipe dynamique et évolutive!</p>
 
@@ -89,9 +92,13 @@ useRouter().replace({ query: { loggedOut: undefined, accountDeleted: undefined }
 
     <!-- Nous contacter -->
     <div class="mb-4 mt-8 text-3xl font-bold">
-      <p>Nous <TextGradient text="contacter" /></p>
+      <p>
+        Nous
+        <TextGradient text="contacter" />
+        <span>.</span>
+      </p>
     </div>
-    <p>En cas de question ou de commentaires, n’hésitez pas à entrer en contact avec nous.</p>
+    <p>En cas de questions ou de commentaires, n’hésitez pas à entrer en contact avec nous.</p>
     <VexaButton class="my-4" text="Nous contacter" url="https://vexastudio.com/contact" />
   </div>
 </template>

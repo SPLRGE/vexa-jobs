@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 useHead({
   bodyAttrs: {
-    class: 'bg-white font-sans text-black',
+    class: 'font-sans dark:bg-gray-900',
   },
 })
 
