@@ -35,6 +35,18 @@ Run the migrations
 pnpm run migrate:deploy
 ```
 
+## Create the first account
+
+1. Go to http://localhost:3000/initialize
+2. Fill in the inputs
+
+Don't forget these credentials!
+
 ## Help
 
 Join our [Discord server](https://discord.splrge.dev) for help.
+
+## Contribute to the project
+
+1. Don't hesitate to star this repo!
+2. Create pull requests to improve/fix features.
