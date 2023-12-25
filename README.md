@@ -37,7 +37,7 @@ pnpm run migrate:deploy
 
 ## Create the first account
 
-1. Go to https://localhost:3000/initialize
+1. Go to http://localhost:3000/initialize
 2. Fill in the inputs
 
 Don't forget these credentials!
