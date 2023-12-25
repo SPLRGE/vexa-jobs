@@ -28,13 +28,13 @@
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "nuxt": "^3.8.2",
+    "nuxt": "^3.9.0",
     "pg": "^8.11.3",
     "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.6",
     "typescript": "^5.2.2",
-    "vue": "^3.3.6",
-    "vue-router": "^4.2.5"
+    "vue": "3.4.0-rc.1",
+    "vue-router": "latest"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.55",
