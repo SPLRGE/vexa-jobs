@@ -14,6 +14,10 @@ const welcomeMessage = computed(() => {
   return 'Bonsoir'
 })
 const { user } = storeToRefs(useUserStore())
+
+function disconnect() {
+  useAuthStore().logout()
+}
 </script>
 
 <template>
@@ -35,6 +39,13 @@ const { user } = storeToRefs(useUserStore())
           <CopyButton content="https://discord.gg/YGdRcZhBsZ" />
         </li>
       </ul>
+    </div>
+    <div class="mt-8 flex flex-row items-center justify-between md:hidden">
+      <NuxtLink to="/admin/account" class="rounded bg-blue-500 px-4 py-2 dark:bg-blue-800">Mon compte</NuxtLink>
+      <ColorModeButton />
+      <NuxtLink to="#" class="rounded bg-red-500 px-4 py-2 dark:bg-red-800" @click="disconnect"
+        >Se déconnecter</NuxtLink
+      >
     </div>
   </div>
 </template>
