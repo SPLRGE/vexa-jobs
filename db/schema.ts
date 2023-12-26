@@ -29,7 +29,6 @@ export const posts = pgTable('posts', {
       onUpdate: 'restrict',
     }),
   createdBy: integer('createdBy')
-    .notNull()
     .references(() => users.id, {
       onDelete: 'set null',
       onUpdate: 'restrict',

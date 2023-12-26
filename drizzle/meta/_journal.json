@@ -29,6 +29,20 @@
       "when": 1698576865415,
       "tag": "0003_plain_madripoor",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1703540700168,
+      "tag": "0004_famous_rick_jones",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1703540741532,
+      "tag": "0005_ancient_swarm",
+      "breakpoints": true
     }
   ]
 }
