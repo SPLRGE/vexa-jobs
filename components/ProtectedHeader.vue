@@ -97,16 +97,22 @@ const items = [
       </div>
 
       <div v-if="isOpen" class="flex flex-col">
-        <NuxtLink class="rounded bg-transparent p-2 hover:bg-gray-100" to="/admin/users" active-class="!bg-gray-100"
+        <NuxtLink
+          class="rounded bg-transparent p-2 hover:bg-gray-100"
+          to="/admin/users"
+          active-class="!bg-gray-100 dark:!bg-gray-800"
           >Utilisateurs</NuxtLink
         >
-        <NuxtLink class="rounded bg-transparent p-2 hover:bg-gray-100" to="/admin/posts" active-class="!bg-gray-100"
+        <NuxtLink
+          class="rounded bg-transparent p-2 hover:bg-gray-100"
+          to="/admin/posts"
+          active-class="!bg-gray-100 dark:!bg-gray-800"
           >Postes</NuxtLink
         >
         <NuxtLink
           class="rounded bg-transparent p-2 hover:bg-gray-100"
           to="/admin/categories"
-          active-class="!bg-gray-100"
+          active-class="!bg-gray-100 dark:!bg-gray-800"
           >Catégories</NuxtLink
         >
       </div>
