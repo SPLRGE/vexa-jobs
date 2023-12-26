@@ -1,5 +1,10 @@
 <script lang="ts" setup>
 const year = new Date().getFullYear()
+let adminDashText = 'Login'
+
+if (useUserStore().user) {
+  adminDashText = 'Dashboard'
+}
 </script>
 
 <template>
@@ -11,7 +16,7 @@ const year = new Date().getFullYear()
         <NuxtLink class="text-blue-500 hover:underline" target="_blank" to="https://splrge.dev">splrge</NuxtLink>
         - &copy;
         {{ year }} -
-        <NuxtLink class="italic text-blue-500 hover:underline" to="/admin">Login</NuxtLink>
+        <NuxtLink class="text-blue-500 hover:underline" to="/admin">{{ adminDashText }}</NuxtLink>
       </p>
       <ColorModeButton />
     </div>
