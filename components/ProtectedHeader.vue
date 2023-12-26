@@ -68,6 +68,7 @@ const items = [
         >
       </div>
       <div class="flex flex-row items-center space-x-2">
+        <ColorModeButton />
         <UDropdown :items="items">
           <div class="flex flex-row items-center">
             <span>{{ user?.email }}</span>
