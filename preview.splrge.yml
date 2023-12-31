@@ -1,0 +1,16 @@
+port: 3000
+dockerfile: Dockerfile
+random_var:
+  PG_PASSWORD:
+  NUXT_JWT_SECRET:
+    min: 12
+    max: 12
+requirements:
+  - name: db
+    type: CONTAINER
+    image: postgres:latest
+    env:
+      POSTGRES_PASSWORD: '{{random_var.PG_PASSWORD}}'
+app_env:
+  DATABASE_URL: 'postgres://postgres:{{random_var.PG_PASSWORD}}@{{requirements[0].id}}:5432/postgres'
+  NUXT_JWT_SECRET: '{{random_var.NUXT_JWT_SECRET}}'
