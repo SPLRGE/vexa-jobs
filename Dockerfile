@@ -20,7 +20,6 @@ RUN pnpm run build
 
 # -- PROD --
 FROM prepare as prod
-ENV NODE_ENV=production
 COPY --chown=node:node package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY --chown=node:node --from=build /home/node/app/.output .
