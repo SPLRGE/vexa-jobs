@@ -23,5 +23,5 @@ FROM prepare as prod
 COPY --chown=node:node package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY --chown=node:node --from=build /home/node/app/.output .
-COPY --chown=node:node bin/migrate.js .
+COPY --chown=node:node bin/ .
 CMD ["/bin/sh", "-c", "pnpm run migrate:deploy;dumb-init node .output/server/index.mjs"]
