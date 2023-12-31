@@ -16,7 +16,7 @@ COPY --chown=node:node . .
 
 # -- BUILD --
 FROM dependencies AS build
-RUN nuxt build
+RUN pnpm run build
 
 # -- PROD --
 FROM prepare as prod
