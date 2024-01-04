@@ -4,6 +4,7 @@
 
 Vexa Jobs allows users to see the jobs available at [vexastudio.com](https://vexastudio.com). By clicking on a button, they are redirected to a form (Google Forms, Office Forms, ...) to apply.
 The site's dashboard lets you read, create, modify and delete users, positions and categories.
+By splrge.dev 
 
 ## Installation
 
